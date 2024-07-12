@@ -6,7 +6,9 @@
   "version": "1.0.1",
   "description": "nada",
   "main": "app.js",
-  "devDependencies": {},
+   "engines": {
+    "node": "18.x"
+   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
