@@ -1,0 +1,64 @@
+body{
+    background: whitesmoke;
+  }
+  .posts{
+      display: flex;
+      margin-top: 1%;
+
+  }
+  .conta{
+        margin-top: 3%;
+
+
+    }
+    .cont *{
+        margin: 5% 0%;
+    }
+    .btn{
+        width: 50%;
+        margin: 2% 0%;
+        
+    }
+    .font{
+
+        margin-left: 15%;
+        height: 45px;
+        width: 50px;
+
+    }
+    .bg{
+      
+        background: #7952b3;
+        color: white;
+    }
+    .title{
+      padding:3%;
+    }
+    .btn{
+        width: 25%;
+        background: #7952b3;
+        color: white;
+    }
+    .btn:hover{
+        background: #7952b3bb;
+        color: white;
+    }
+
+    .content{
+      width: 100%;
+      box-shadow: 1px;
+    }
+    .ImgTitle{
+        border: 1px solid whitesmoke;
+        border-radius: 2%;
+        width: 100%;
+        height: 50%;
+
+    }
+    .square{
+        width: 100%;
+        background: red;
+    }
+    .size{
+        font-size: large;
+    }
