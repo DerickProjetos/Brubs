@@ -185,14 +185,15 @@ app.get("/dolar/aprenda-ingles-online", (req, res)=>{
     res.sendFile(__dirname + "/posts/pages/categories/dolar/pages/2aprendaingles.html")
 
 })
-app.get("robots.txt", (req, res)=>{
 
-    res.sendFile(__dirname + "robots.txt")
+app.get("/robots.txt", (req, res)=>{
+
+    res.sendFile(__dirname + "/robots.txt")
 
 })
-app.get("sitemap", (req, res)=>{
+app.get("/sitemap", (req, res)=>{
 
-    res.sendFile(__dirname + "sitemap.xml")
+    res.sendFile(__dirname +"/sitemap.xml")
 
 })
 
