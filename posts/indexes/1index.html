@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/link.css">
+    
+    <title>Mondongo</title>
+    <style>
+        body{
+            background: whitesmoke;
+        }
+        .posts{
+
+            margin-top: 2%;
+
+        }
+        .con{
+
+            margin-top: 3%;
+
+        }
+        .cont *{
+
+            margin: 5% 0%;
+
+        }
+        .btn{
+
+            width: 50%;
+            
+        }
+        .font{
+
+            margin-left: 15%;
+            height: 45px;
+            width: 50px;
+
+        }
+        .bg{
+            background: #7952b3;
+            color: white;
+        }
+        .content{
+          width: 90%;
+        }
+   
+   
+        .color{
+         
+            font-weight: 700;
+            line-height: 1.2px;
+            color: white;
+
+        }
+ 
+    
+    </style>
+</head>
+<body class="d-flex flex-column">
+    <nav class="shadow navbar navbar-light bg">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand" > 
+                <img class="font" src="/images/logoformondongo.png">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-light">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                    </li>
+                
+                </ul>  
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+            <div class="shadow rounded bg-white container d-flex gap-3 flex-column">
+                <br>
+                <div class="row d-flex gap-3">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <img src="images/acao.jpg" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center gap-4">
+                                <h5 class="card-title">Introdução ao Investimento em Ações</h5>
+                                <p class="card-text">Investir em ações é uma das maneiras mais populares e potencialmente lucrativas de construir riqueza ao longo do tempo. As ações representam uma participação na propriedade de uma empresa, conferindo ao acionista uma parte dos lucros e ativos da empresa...</p>
+                                <a href="/Renda-Variavel/O-que-sao-acoes" class="btn btn-light bg">Ler</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="row d-flex gap-3">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center gap-4">
+                                <h5 class="card-title">Introdução aos Certificados de Depósito Bancário (CDB)</h5>
+                                <p class="card-text">Os Certificados de Depósito Bancário (CDB) são um dos investimentos mais populares no Brasil, especialmente entre investidores que buscam uma alternativa segura e rentável à poupança. Este artigo tem como objetivo apresentar uma visão geral sobre o que são os CDBs, como funcionam, suas vantagens e desvantagens, e algumas considerações importantes para...</p>
+                                <a href="/Renda-Fixa/O-que-e-cdb" class="btn btn-light bg">Ler</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <br>
+                <nav aria-label="">
+                    <ul class="pagination">
+                    
+                        <li class="page-item">
+                            <a class="page-link disabled" href="/" tabindex="-1">1</a>
+                          </li>
+                          <li class="page-item "><a class="page-link" href="/2">2</a></li>
+                          <li class="page-item "><a class="page-link" href="/3">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="/4" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+          
+
+
+        <div class="d-flex flex-column gap-3 PrimeLinks">
+            <div class="shadow rounded bg-white d-flex justify-content-center links">
+              <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                <p class="text-start par">Recentes Posts</p>
+                <a href="/Renda-Variavel/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                <a href="/Renda-Fixa/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                <a href="/Renda-Fixa/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                <a href="/Renda-Fixa/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                <a href="/Renda-Variavel/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+              </div>
+          </div>
+          <div class="shadow rounded bg-white d-flex justify-content-center links">
+            <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                <p class="text-start par">Categorias</p>
+                <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+              </div>
+        </div>
+        </div>
+        </section>
+        <section class="bg-white d-flex flex-column con justify-content-center">
+            <label class="p-3 text-center">© 2024 por mondongo.com</label>
+      
+           
+            
+        </section>
+
+       
+     
+      
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

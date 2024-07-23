@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/posts.css">
+    <link rel="stylesheet" href="/style/link.css">
+    <title>Mondongo</title>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-light bg">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand" > 
+        <img class="font" src="/images/logoformondongo.png">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-light">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                </li>
+            
+            </ul>  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+
+              <div class="shadow rounded content container bg-white d-flex flex-column align-items-center gap-2"">
+                  <br>
+                  <p class="title h4">
+                    Tudo sobre Poupança: recursos, benefícios e comparações
+                  </p>
+                  <img class="ImgTitle card-img-top" src="data:image/jpeg;base64,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">
+                  <br>
+                  <div class="container">
+                    <p class="fs-6">
+                      A poupança é um tipo de conta bancária popular no Brasil e em muitos outros países. É amplamente utilizado como uma forma de investimento de baixo risco e alta liquidez. 
+                    </p>
+                    <br>
+                      <p class="h5">Funções principais</p>
+                      <br>
+                      <ul class="row d-flex gap-3 margem">
+                        <li class="fs-6">
+                          <strong>Baixo risco</strong>: A poupança é considerada um dos investimentos mais seguros, pois os valores depositados são garantidos pelo Fundo Garantidor de Empréstimos (FGC) até determinado limite. 
+                        </li>
+                      <li class="fs-6">
+                        <strong>Liquidez instantânea</strong>: O dinheiro depositado em  conta poupança pode ser sacado a qualquer momento sem penalidade, sendo uma opção conveniente em emergências e para a gestão financeira pessoal diária. 
+                      </li>
+                      <li class="fs-6">
+                        <strong>Renda</strong>: No Brasil, a poupança tem uma forma específica de renda. A recompensa consiste em uma taxa referencial (TR), que pode ser zero, acrescida de uma taxa fixa de 0,5% ao mês quando a taxa Selic for superior a 8,5% ao ano. Quando a Selic é igual ou inferior a 8,5% ao ano, a poupança rende 70% da Selic mais TR. beneficiar 
+                      </li>
+                      <li class="fs-6">
+                        <strong>Simplicidade</strong>: Abrir e manter uma conta poupança é simples e não requer conhecimentos avançados de investimentos.  
+                      </li>
+                      <li class="fs-6">
+                        <strong>Isenção de imposto de renda</strong>: No Brasil, os rendimentos da poupança são isentos de imposto de renda para pessoas físicas.  
+                      </li>
+                      <li class="fs-6">
+                        <strong>Segurança</strong>: Garantida pelo FGC, a poupança oferece  ao investidor segurança contra perdas financeiras em caso de problemas com o banco.  
+                      </li>
+                    </ul>
+                    <br>
+                    <p class="h5">Desvantagens</p>
+                    <br> 
+                      <ul class="row d-flex gap-4 margem"> 
+                        <li class="fs-6">
+                          <strong>Retornos baixos</strong>: Em comparação com outros investimentos, a poupança tende a oferecer retornos mais baixos, especialmente durante períodos de inflação elevada. 
+                        </li>
+                        <li class="fs-6">
+                          <strong>Impacto da inflação</strong>: Em tempos de inflação elevada, o rendimento da poupança pode não ser suficiente para manter o poder de compra do dinheiro investido. A história da poupança no Brasil A poupança tem uma longa história no Brasil, sendo um dos investimentos mais tradicionais e populares entre a população. Criada em 1861 por Dom Pedro II, a poupança evoluiu ao longo dos anos, mas sempre manteve a essência de ser uma forma simples e segura de guardar dinheiro. Como funciona a compensação
+                        </li>
+                      </ul>
+                      <br>
+                      <p class="h5">
+                        A recompensa poupança é regida por regras específicas no Brasil: 
+                      </p>
+                      <br>
+                      <div class="row d-flex gap-4 margem">
+                        <p class="fs-6">
+                          <strong>Até 4 de maio de 2012</strong>: A recompensa era de 0,5% ao mês (6,17% ao ano) acrescida da taxa de indicação (TR).  
+                        </p>
+                        <p class="fs-6">
+                          <strong>A partir de 4 de maio de 2012</strong>: Uma nova regra foi introduzida. Quando a taxa Selic está acima de 8,5% ao ano, a poupança rende 0,5% ao mês mais TAEG. Quando a Selic for igual ou inferior a 8,5% ao ano, a recompensa é de 70% da Selic acrescida de TR.  
+                        </p>
+                       
+                        
+                      </div>
+                      <br>
+                      <p class="h5">
+                        TR (taxa referencial)
+                      </p>
+                      <br>
+                      <p class="fs-6">
+                         A TR é uma taxa referencial calculada com base na remuneração média dos CDBs  (Certificados de Depósitos Bancários) pré-determinados das principais instituições financeiras do país. Foi criado em 1991 como parte do Plano Collor II e teve, ao longo do tempo, um impacto significativo na rentabilidade das economias. Atualização mensal O rendimento da poupança é calculado mensalmente, na data do aniversário da conta (dia do mês em que foi feito o depósito). Caso o dinheiro seja sacado antes da data de aniversário, não há recompensa pelo valor sacado no período atual. 
+                      </p>
+                      <br>
+                      <p class="h4">Comparação com outros investimentos de renda fixa</p>
+                      <br>
+                      <ul class="row d-flex gap-3 margem">
+                        <li class="fs-6">
+                          <strong>CDB (Certificado de Depósito Bancário)</strong>: pode oferecer rentabilidade superior à poupança, principalmente CDB de bancos pequenos que oferecem taxas mais atrativas para atrair investidores. 
+                        </li>
+                        <li class="fs-6">
+                          <strong>Tesouro Direto</strong>: Os investimentos em títulos públicos como o Tesouro Selic (LFT) oferecem retorno diretamente vinculado à taxa Selic, geralmente superior ao da poupança.  
+                          
+                        </li>
+                        <li class="FS-6">
+                          <strong>LCI/LCA (Letras de Crédito Imobiliário e do Agronegócio)</strong>: Isentas de imposto de renda para pessoas físicas e muitas vezes oferecem retorno superior ao da poupança.  
+                        </li>
+                        <li class="fs-6">
+                          <strong>Planejamento financeiro Reserva de emergência</strong>: A poupança é recomendada por muitos consultores financeiros como o local ideal para reservas de emergência devido à sua segurança e liquidez imediata.  
+                        </li>
+                        <li class="fs-6">
+                          <strong>Diversificação</strong>: Para quem busca aumentar a renda, é recomendado diversificar os investimentos. 
+                        </li>
+                      </ul>
+                      <br>
+                      <p class="fs-6">
+                        A poupança só pode fazer parte de uma  carteira de investimentos, complementada por outras opções de renda fixa e variável. A alternativa de longo prazo Para objetivos de longo prazo, como a aposentadoria, a poupança pode não ser a melhor opção devido aos baixos retornos. 
+                      </p>
+                      <p class="fs-6">
+                        Produtos como planos de previdência privada (PGBL e VGBL), fundos mútuos e ações podem oferecer melhor desempenho, embora envolvam mais riscos e exijam melhor planejamento e conhecimento do mercado financeiro.
+                      </p>
+                      <p class="fs-6">  
+                        <strong>Resumindo</strong>, a poupança é um investimento básico e seguro, ideal para objetivos de curto prazo e para formar uma reserva de emergência. Porém, para obter um retorno maior, é importante considerar outras opções de investimento que possam complementar a poupança e proporcionar um melhor retorno ao longo do tempo.
+                      </p>
+                   </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+                  <a href="/Renda-Fixa/guia-completo-para-lc" class="btn">proximo</a>
+                
+              </div>
+
+              <div class="d-flex flex-column gap-3 PrimeLinks">
+                <div class="shadow rounded bg-white d-flex justify-content-center links">
+                  <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                    <p class="text-start par">Recentes Posts</p>
+                    <a href="/Renda-Variavel/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                    <a href="/Renda-Fixa/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                    <a href="/Renda-Fixa/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                    <a href="/Renda-Fixa/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                    <a href="/Renda-Variavel/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+                  </div>
+                </div> 
+              <div class="shadow rounded bg-white d-flex justify-content-center links">
+                <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                  <p class="text-start par">Categorias</p>
+                  <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                  <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                  <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                  <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                  <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+                </div>
+            </div>
+            </div>
+
+              
+        </section>
+        <section class="conta bg-white d-flex justify-content-center p-4">
+          <label>© 2024 por mondongo.com</label>
+        </section>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          let ccon = document.querySelector(".ccon")
+          
+          var socket = io();
+            socket.emit("data", {"IsLogged": true, "id": 5})
+            
+            socket.on("cont", (msg)=>{
+
+              console.log(msg)
+              ccon.innerText = msg
+              
+
+            })
+            socket.on("url", (url)=>{
+
+              ccon.href = url
+
+            })
+
+          
+        </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

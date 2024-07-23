@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/posts.css">
+    <link rel="stylesheet" href="/style/link.css">
+    <title>Mondongo</title>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-light bg">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand" > 
+        <img class="font" src="/images/logoformondongo.png">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-light">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                </li>
+            
+            </ul>  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+
+              <div class="shadow rounded content container bg-white d-flex flex-column align-items-center gap-2">
+                <br>
+                <p class="title h4">
+                  Entenda a renda passiva: o conceito, exemplos e benefícios
+                </p>
+                <img class="ImgTitle card-img-top" src="data:image/png;base64,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">
+                <br>
+                <div class="container">
+                    <p class="h5">
+                      O que é renda passiva?
+                    </p>
+                    <br>
+                    <div class="row d-flex margem">
+                      <p class="fs-6">
+                        A renda passiva é um tipo de renda que não requer esforço constante para ser mantida. Ao contrário da renda ativa, que exige trabalho constante, a renda passiva permite que você ganhe dinheiro de forma mais automática, mesmo enquanto dorme, viaja ou realiza outras atividades.
+                      </p>
+                    </div>
+                    <br>
+                    <p class="h5">
+                      Recursos de renda passiva
+                    </p> 
+                    <br>
+                    <div class="row d-flex margem gap-3">
+                      <div class="row d-flex">
+                        <p class="h6">
+                          Esforço inicial mínimo e manutenção:
+                        </p>
+                        <br>
+                        <p class="fs-6">
+                          É necessário um esforço inicial para criar uma fonte de renda passiva, como investir em ações, imóveis ou criar produtos digitais. Após esta fase inicial, a manutenção e o comprometimento de tempo são mínimos. 
+                        </p>
+                      </div>
+                      <div class="row d-flex">
+                        <p class="h6">
+                          Fluxo de caixa contínuo:
+                        </p>
+                        <br>
+                        <p class="fs-6">
+                          Gera um fluxo constante de dinheiro sem a necessidade de trabalho constante. Isso pode ser feito mensalmente, trimestralmente ou anualmente, dependendo do tipo de investimento ou negócio. 
+                        </p>
+                      </div>
+                      <div class="row d-flex">
+                        <p class="h6">
+                          Diversificação:
+                        </p>
+                        <p class="fs-6">
+                          Recomenda-se ter múltiplas fontes de renda passiva para reduzir o risco e aumentar a estabilidade financeira. 
+                        </p>
+                      </div>
+                      <div class="row d-flex">
+                        <p class="h6">
+                          Independência financeira:
+                        </p>
+                        <br>
+                        <p class="fs-6">
+                          É uma ferramenta essencial para alcançar a independência financeira, permitindo-lhe cobrir as suas despesas sem depender de um trabalho tradicional. 
+                        </p>
+                      </div>
+                      <div class="row d-flex">
+                        <p class="h6">
+                          Riscos e benefícios variáveis:
+                        </p>
+                        <br>
+                        <p class="fs-6">
+                          Como qualquer tipo de investimento, os fluxos de rendimento passivos acarretam vários níveis de risco e retorno potencial. É importante avaliar e diversificar os investimentos para equilibrar riscos e recompensas. 
+                        </p>
+                      </div>
+                    </div>
+                    <br>
+                    <p class="h4">
+                      Exemplos de renda passiva
+                    </p>
+                    <br>
+                    <div>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Ações que pagam dividendos:
+                        </p>
+                        <br>
+                        <p class="fs-6">
+                          <strong>Exemplo</strong>: Invista em ações de empresas sólidas que pagam dividendos regulares. A implicação: receber periodicamente parte dos lucros da empresa sem ter que vender suas ações. 
+                        </p>
+                      </div>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Fundos imobiliários (FII):
+                        </p>
+                        <br>
+                        <p class="fs-6">
+                          Exemplo: Comprar cotas de um fundo imobiliário que possui e aluga imóveis comerciais. A implicação: receba uma parte dos rendimentos arrecadados pelo fundo, proporcionalmente ao número de cotas que você possui. 
+                        </p>
+                      </div>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Imóvel para alugar:
+                        </p>
+                        <br>
+                        <p class="fs-6">
+                          Exemplo: Compre um apartamento e alugue-o. Implicação: Cobrança de aluguel mensal, que pode cobrir custos de propriedade e gerar lucros adicionais. 
+                        </p>
+                      </div>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Títulos de renda fixa:
+                        </p>
+                        <p class="fs-6">
+                          Exemplo: Invista em CDB, LCI, LCA ou Tesouro Direto. Implicação: Beneficiar de juros periódicos sobre o capital investido, com possibilidade de reembolso do investimento no vencimento do título. 
+                        </p>
+                      </div>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Criação de produtos digitais:
+                        </p>
+                        <p class="fs-6">
+                          Exemplo: Desenvolva um curso online e venda-o através de uma plataforma educacional. Implicação: uma vez criado e disponível, o curso pode gerar vendas contínuas com pouco esforço extra. 
+                        </p>
+                      </div>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Royalties e licenças:
+                        </p>
+                        <p class="fs-6">
+                          Exemplo: Escreva um livro e licencie-o para diversas editoras ou traduza-o para outros idiomas. A implicação: você paga cada vez que o livro é vendido ou usado. 
+                        </p>
+                      </div>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Marketing afiliado:
+                        </p>
+                        <p class="fs-6">
+                          Exemplo: crie um blog ou canal no YouTube e promova produtos de terceiros por meio de links afiliados. Envolvimento: Ganhe comissões sobre as vendas realizadas através de seus afiliados sem precisar criar ou gerenciar os produtos. 
+                        </p>
+                      </div>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="h6">
+                          Franquia:
+                        </p>
+                        <p class="fs-6">
+                          Exemplo: Compre uma franquia de uma marca bem estabelecida. Implicação: Você se beneficia de parte dos lucros gerados pela franquia, enquanto a gestão operacional pode ser delegada a terceiros. 
+                        </p>
+                      </div>
+                    </div>
+                    <br>
+                    <p class="h4">
+                      Os benefícios da renda passiva
+                    </p>
+                    <br>
+                    <div class="row d-flex margem gap-3">
+                      <p class="fs-6">
+                        Autonomia e flexibilidade: Com fontes de renda passivas, você tem mais liberdade para administrar seu tempo e dedicá-lo a outras atividades ou hobbies. 
+                      </p>
+                      <p class="fs-6">
+                        Segurança financeira: Ter múltiplas fontes de rendimento passivo pode aumentar a estabilidade financeira e servir como uma rede de segurança contra acontecimentos imprevistos. 
+                      </p>
+                      <p class="fs-6">
+                        Potencial de crescimento: Com o tempo, o rendimento passivo pode crescer através do reinvestimento e da valorização dos activos.
+                      </p>
+                      </div>
+                      <p class="h4">
+                        Desafios de renda passiva
+                      </p>
+                      <br>
+                      <div class="row d-flex margem">
+                          <p class="fs-6">Esforço Inicial: A criação de fluxos de rendimentos passivos pode exigir um esforço inicial significativo, seja em termos de tempo, dinheiro ou ambos.</p> 
+                          <p class="fs-6">Riscos de mercado: Investimentos como ações e imóveis podem sofrer com a volatilidade do mercado, afetando os rendimentos gerados.</p> 
+                          <p class="fs-6">Gestão e manutenção: Algumas formas de renda passiva, como imóveis para aluguel, podem exigir gestão e manutenção contínuas, ou o custo de contratação de serviços de gestão.</p> 
+                      </div>
+                      <br>
+                      <p class="h4">
+                        CONCLUSÃO
+                      </p>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="fs-6">A renda passiva é uma parte essencial da construção de um futuro financeiro forte e independente.</p> 
+                        <p class="fs-6">Ao diversificar as suas fontes de rendimento passivo e investir em ativos que correspondam ao seu perfil de risco e aos seus objetivos financeiros, pode aumentar significativamente a sua segurança financeira e liberdade pessoal.</p> 
+                        <p class="fs-6">Lembre-se sempre de fazer uma análise criteriosa e, se necessário, buscar orientação de profissionais financeiros para otimizar suas estratégias de renda passiva.</p>
+                      </div>
+                  </div>
+              
+                
+            
+                  <a href="/dolar/dicas-de-ecommerce" class="btn">proximo</a>
+                
+              </div>
+
+              <div class="d-flex flex-column gap-3 PrimeLinks">
+                <div class="shadow rounded bg-white d-flex justify-content-center links">
+                  <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                    <p class="text-start par">Recentes Posts</p>
+                    <a href="/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                    <a href="/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                    <a href="/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                    <a href="/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                    <a href="/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+                  </div>
+              </div>
+              <div class="shadow rounded bg-white d-flex justify-content-center links">
+                <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                  <p class="text-start par">Categorias</p>
+                  <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                  <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                  <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                  <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                  <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+                </div>
+            </div>
+            </div>
+
+              
+        </section>
+        <section class="conta bg-white d-flex justify-content-center p-4">
+          <label>© 2024 por mondongo.com</label>
+        </section>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          let ccon = document.querySelector(".ccon")
+          
+          var socket = io();
+            socket.emit("data", {"IsLogged": true, "id": 10})
+            
+            socket.on("cont", (msg)=>{
+
+              console.log(msg)
+              ccon.innerText = msg
+              
+
+            })
+            socket.on("url", (url)=>{
+
+              ccon.href = url
+
+            })
+
+          
+        </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

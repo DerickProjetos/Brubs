@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/posts.css">
+    <link rel="stylesheet" href="/style/link.css">
+    <title>Mondongo</title>
+</head>
+<body>
+
+  
+  <nav class="shadow navbar navbar-light bg">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand" > 
+        <img class="font" src="/images/logoformondongo.png">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-light">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                </li>
+            
+            </ul>  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+
+              <div class="shadow rounded content container bg-white d-flex flex-column align-items-center gap-2"">
+                <p class="h3 title">
+                  Fundos Imobiliários: O Guia Completo para Investir
+                </p>
+                <br>
+                <img class="ImgTitle" src="data:image/jpeg;base64,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">
+                <br>
+                <div class="container">
+                <p class="fs-6">
+                  Os fundos imobiliários, chamados de FIIs (Fundos de Investimento Imobiliário), são uma modalidade de investimento coletivo em imóveis. Funcionam como um imóvel comum onde os investidores adquirem cotas, tornando-se coproprietários dos imóveis ou empreendimentos que compõem a carteira do fundo. Veja alguns pontos importantes sobre os FIIs:
+                </p>
+                <br>
+                <p class="h4">
+                  Características dos fundos imobiliários:
+                </p>
+                <br>
+                <div class="row d-flex gp-3 margem">
+              
+                      <p class="fs-6">
+                        <strong>Diversificação de ativos</strong>:
+                        Os FIIs podem investir em diversos tipos de imóveis, como prédios comerciais, shopping centers, hospitais, armazéns logísticos, hotéis, entre outros. Também podem investir em ativos financeiros relacionados ao setor imobiliário, como certificados de dívida imobiliária (CRI).
+                      </p>
+
+                      <p class="fs-6">
+                        <strong>Desempenho</strong>:
+                        A principal fonte de renda dos FIIs é o aluguel dos imóveis que constituem o fundo. Os rendimentos são distribuídos aos acionistas periodicamente, geralmente mensalmente.
+                        
+                      </p> 
+                      
+                      <p>
+                        <strong>Liquidez</strong>:
+                      
+                      As cotas do FII são negociadas em bolsa de valores, o que proporciona maior liquidez em comparação ao investimento direto em imóveis. Isto permite aos investidores comprar e vender ações com base nas suas necessidades de liquidez.
+                      </p> 
+                      <p class="fs-6">
+                        <strong>Gestão profissional</strong>:
+                      
+                      Os FIIs são administrados por gestores profissionais, responsáveis ​​pela tomada de decisões de investimentos, manutenção de imóveis e estratégias de locação. Isso facilita o acesso de pequenos investidores ao mercado imobiliário sem a necessidade de administrar diretamente os imóveis. 
+                      </p>
+                      <p class="fs-6">
+                        <strong>Valorização de capital</strong>:
+                      
+                      Além das receitas de aluguel, os investidores também podem se beneficiar com o aumento do valor dos imóveis que compõem a carteira do fundo. 
+                      
+                      </p> 
+                     
+                </div>
+                <br>
+                <p class="h4">
+                  Vantagens dos fundos imobiliários:
+                </p>
+                <br>
+                <div class="row d-flex gp-3 margem">
+                
+                  <p class="fs-6">
+                    <strong>Acessibilidade</strong>:
+                
+                    Isso permite investir em imóveis com menos patrimônio, já que ações são mais baratas do que comprar um imóvel inteiro.
+                  </p> 
+                  <p class="fs-6">
+                    <strong>Isenção de imposto de renda</strong>:
+                    
+                    Para pessoas físicas, os rendimentos distribuídos pelos FIIs são isentos de imposto de renda, desde que atendidas determinadas condições (como o fundo ter no mínimo 50 cotistas e o cotista não possuir mais de 10% das ações). 
+                  </p>
+                  <p class="fs-6">
+                    <strong>Transparência</strong>:
+                
+                    Os FIIs são regulamentados pela Comissão de Valores Mobiliários (CVM) e devem divulgar periodicamente informações sobre seu desempenho, composição da carteira e resultados. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>Diversificação</strong>:
+                
+                    Investir em FIIs permite diversificar seu investimento em diferentes tipos de propriedades e geografias, reduzindo assim o risco concentrado. 
+                  </p>
+                </div>
+                <br>
+                <p class="h4">Desvantagens dos fundos imobiliários:</p>
+                <br>
+                <div class="row d-flex gp-3 margem">
+                  <p class="fs-6">
+                    <strong>volatilidade</strong>:
+                
+                    As ações do FII podem ser voláteis, refletindo as condições do mercado imobiliário e da economia em geral. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>Risco de vagas</strong>:
+                
+                    Existe o risco dos imóveis permanecerem devolutos, o que poderá afetar negativamente os rendimentos distribuídos. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>Taxas e custos</strong>:
+                
+                    Os FIIs possuem encargos de administração e gestão, que podem afetar o retorno líquido do investimento.
+                  </p> 
+                </div>
+                <br>
+                <p class="h4">
+                  Tipos de FIIs:
+                </p>
+                <br>
+                <div class="row d-flex gp-3 margem">
+                    <p class="fs-6">
+                      <strong>Renda do FII</strong>: Focado na geração de renda recorrente através de imóveis para locação.
+                    </p>
+                    <p class="fs-6">
+                      <strong>Desenvolvimento de FII</strong>:
+                      Investem em projetos de incorporação imobiliária, com o objetivo de lucrar com a venda de imóveis prontos. 
+                    </p>
+                    <p class="fs-6">
+                      <strong>Carta FII</strong>:
+                      Invista em títulos vinculados ao mercado imobiliário, como CRI e LCI.
+                    </p>
+                    <p class="fs-6">
+                      <strong>FII Híbrido</strong>:
+                
+                      Combinam estratégias de rendimento e desenvolvimento, diversificando activos em diferentes tipos de bens e valores mobiliários.
+                    </p>
+                </div> 
+                <br>
+                <p class="h4">
+                  Estratégias para investir em FII:
+                </p>
+                <br>
+                <div class="row d-flex gp-3 margem">
+                  <p class="fs-6">
+                    <strong>
+                      Análise do Gerente:
+                    </strong>
+                      É fundamental avaliar a experiência e o histórico do gestor do fundo. Gestores com bons dados tendem a tomar melhores decisões quando se trata de gestão de propriedades e estratégias de locação. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>
+                      Diversificação:
+                    </strong>
+                      A diversificação em diferentes tipos de IMFs (rendimento, desenvolvimento, papel e híbridos) e sectores (comercial, residencial, logística, etc.) pode ajudar a reduzir riscos e melhorar os retornos. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>
+                      Análise de propriedade:
+                    </strong>
+                      Verifique a qualidade dos imóveis que compõem o portfólio do fundo, sua localização, seu estado de conservação e seu potencial de crescimento. Imóveis bem localizados e em boas condições tendem a ser mais procurados e, portanto, reduzem o risco de vagas. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>
+                      Taxas e custos:
+                    </strong>
+                    Compare as taxas de administração e de desempenho pagas pelos fundos. Taxas muito elevadas podem ter um impacto significativo no retorno do investimento. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>
+                      Liquidez:
+                    </strong>
+                    Considere a liquidez da ação, ou seja, a facilidade de comprar e vender a ação no mercado secundário. FIIs com maior liquidez tendem a ser mais atrativos, pois oferecem mais flexibilidade ao investidor. 
+                  </p>
+                  <p class="fs-6">
+                    <strong>
+                      Distribuição de renda:
+                    </strong>
+                    Analise o histórico de distribuição de renda do fundo para entender a consistência dos pagamentos. Os fundos que distribuem rendimentos de forma regular e previsível são geralmente mais fiáveis. 
+                  </p>
+                </div>
+                <br>
+                <p class="h4">Considerações finais:</p>
+                <br>
+                <div class="row d-flex gp-3 margem">
+                  <p class="fs-6">
+                    Investir em FIIs pode ser uma ótima forma de ganhar exposição ao mercado imobiliário com uma série de benefícios como isenção de impostos sobre renda distribuída (para pessoas físicas), oportunidades de diversificação e gestão profissional de imóveis. Porém, é fundamental que o investidor esteja ciente dos riscos envolvidos, como a volatilidade das cotas, o risco de vacância de imóveis e as taxas cobradas pelos fundos.
+                  </p>
+
+                  <p class="fs-6">
+                    Para quem busca renda passiva, os FIIs são uma opção atrativa pela distribuição periódica de renda. Para quem busca valorização de capital, escolher fundos que invistam em projetos de desenvolvimento pode ser atrativo.
+                  </p>
+                  <p class="h4">
+                    FII de sucesso:
+                  </p>
+                  <br/>
+                    <div class="row d-flex gp-3">
+                   
+                      <p class="fs-6">
+                        <strong>Estudo e Pesquisa</strong>: Antes de investir, estude cuidadosamente os diferentes tipos de FIIs, leia os relatórios mensais e anuais dos fundos e acompanhe as novidades e tendências do mercado imobiliário.
+                      </p>
+                      <p class="fs-6">
+                        <strong>Objetivos de Investimento</strong>: Defina claramente seus objetivos de investimento. Se você procura uma renda passiva, os fundos de renda podem ser a melhor opção. Se você busca valorização, fundos de crescimento ou híbridos podem ser mais atrativos.
+                      </p>
+
+                      <p class="fs-6">
+                        <strong>Acompanhamento</strong>:
+                         Mesmo após a compra das cotas, é importante acompanhar periodicamente o desempenho do fundo, as decisões dos gestores e as condições de mercado.
+                      </p>
+                    
+                    </div>
+                  </div>
+                  <p class="fs-6">
+                    Investir em FII pode ser uma ótima forma de diversificar sua carteira e obter renda passiva, mas como qualquer investimento, exige estudo, planejamento e acompanhamento constante.
+                  </p>
+                </div>
+            
+                  <a href="/Renda-Fixa/Poupanca" class="btn">proximo</a>
+                
+              </div>
+              <div class="d-flex flex-column gap-3 PrimeLinks">
+                <div class="shadow rounded bg-white d-flex justify-content-center links">
+                  <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                    <p class="text-start par">Recentes Posts</p>
+                    <a href="/Renda-Variavel/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                    <a href="/Renda-Fixa/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                    <a href="/Renda-Fixa/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                    <a href="/Renda-Fixa/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                    <a href="/Renda-Variavel/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+                  </div>
+                </div> 
+              <div class="shadow rounded bg-white d-flex justify-content-center links">
+                <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                  <p class="text-start par">Categorias</p>
+                  <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                  <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                  <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                  <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                  <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+                </div>
+            </div>
+            </div>
+
+              
+        </section>
+        <section class="conta bg-white d-flex justify-content-center p-4">
+          <label>© 2024 por mondongo.com</label>
+        </section>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          let ccon = document.querySelector(".ccon")
+          
+          var socket = io();
+            socket.emit("data", {"IsLogged": true, "id": 4})
+            
+            socket.on("cont", (msg)=>{
+
+              console.log(msg)
+              ccon.innerText = msg
+              
+
+            })
+            socket.on("url", (url)=>{
+
+              ccon.href = url
+
+            })
+
+          
+        </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

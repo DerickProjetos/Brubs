@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/posts.css">
+    <link rel="stylesheet" href="/style/link.css">
+    <title>Mondongo</title>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-light bg">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand" > 
+        <img class="font" src="/images/logoformondongo.png">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-light">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                </li>
+            
+            </ul>  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+
+              <div class="shadow rounded content container bg-white d-flex flex-column align-items-center gap-2">
+                <br>
+                <p class="title h4">
+                  Planejamento estratégico no comércio local
+                </p>
+                <img class="ImgTitle card-img-top" src="data:image/jpeg;base64,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">
+                <br>
+                <div class="container">
+                  <p class="fs-6">
+                    O planejamento estratégico é uma etapa fundamental para o sucesso de qualquer negócio local, pois determina a direção e os objetivos de longo prazo do negócio. 
+                  </p>
+                  <br>
+                  <p class="h4">
+                    Aqui estão os principais componentes do planejamento estratégico:
+                  </p>
+                  <br>
+                  <div class="row d-flex gap-3 margem">
+                      <p class="h5">
+                        Missão, visão e valores
+                      </p>
+                      <div class="row d-flex margem">
+                      <p class="fs-6">
+                          1. <strong>Missão</strong>: Descreve o propósito da empresa e o que ela está tentando alcançar. Deve ser claro e inspirador.
+                      </p> 
+                       <p class="fs-6">
+                          2. <strong>Visão</strong>: Define onde a empresa quer chegar no futuro. É uma imagem aspiracional de sucesso a longo prazo
+                       </p> 
+                       <p class="fs-6">
+                          3. <strong>Valores</strong>: os princípios e crenças que orientam as decisões e comportamentos na empresa. 
+                       </p>
+                      </div>
+                      <p class="h5">Análise SWOT</p>
+                      <div class="row d-flex margem">
+                          <p class="fs-6">
+                            1. <strong>Pontos fortes</strong>: Identifique os pontos fortes internos da empresa, como boa localização, produtos de qualidade ou uma equipe talentosa.
+                          </p> 
+                          <p class="fs-6">
+                            2. <strong>Pontos fracos</strong>: Identifique áreas internas que precisam de melhorias, como falta de experiência ou recursos limitados.
+                          </p> 
+                          <p class="fs-6">
+                            3. <strong>Oportunidades</strong>: Fatores externos dos quais o negócio pode se beneficiar com o crescimento, como tendências de mercado favoráveis ​​ou demanda insatisfeita. 
+                          </p>
+                          <p class="fs-6">  
+                            4. <strong>Ameaças</strong>: Fatores externos que podem afetar negativamente o negócio, como novos concorrentes ou mudanças económicas. 
+                          </p>
+                      </div>   
+                          <p class="h5 ">Defina metas e objetivos</p>
+                      <div class="row d-flex margem">
+                          <p class="fs-6">
+                            <strong>Objetivos</strong>: As metas amplas e de longo prazo que a empresa deseja alcançar.
+                          </p> 
+                          <p class="fs-6">
+                            <strong>Metas SMART</strong>: metas específicas, mensuráveis, alcançáveis, relevantes e com prazo determinado que ajudam a atingir as metas gerais.
+                          </p>
+                      </div>
+                    </div>
+                    <br>
+                    <p class="h4">
+                      Estratégias de crescimento
+                    </p>
+                    <br>
+                    <div class="row d-flex margem">
+                      <p class="fs-6">
+                        <strong>Penetração de mercado</strong>: Aumente a participação atual no mercado por meio de campanhas de marketing, promoções e melhor atendimento ao cliente.
+                      </p> 
+                      <p class="fs-6">
+                        <strong>Desenvolvimento de produtos</strong>: introdução de novos produtos ou serviços para atender às necessidades dos clientes existentes.
+                      </p> 
+                      <p class="fs-6">
+                        <strong>Expansão geográfica</strong>: Abertura de novas unidades em diversos países para atingir um público mais amplo.
+                      </p> 
+                      <p class="fs-6">
+                        <strong>Diversificação</strong>: agregar novos produtos ou serviços que não estejam diretamente relacionados ao portfólio atual, mas que atendam ao mesmo mercado-alvo.
+                      </p>
+                      <br>
+                      <br>
+                      <p class="h5">
+                        Planejamento de recursos
+                      </p>
+                      <br>
+                      <br>
+                      <div class="row d-flex margme">
+                        <p class="fs-6">
+                          <strong>Financeiro</strong>: orçamento detalhado abrangendo todas as despesas operacionais, investimentos e reservas para contingências. 
+                        </p>
+                        <p class="fs-6">
+                          <strong>Pessoas</strong>: planejamento da força de trabalho necessária, incluindo recrutamento, treinamento e desenvolvimento dos colaboradores.
+                        </p> 
+                        <p class="fs-6">
+                          <strong>Materiais e Tecnologia</strong>: Identifique os equipamentos, tecnologia e outros recursos físicos necessários para funcionar de forma eficaz.
+                        </p>
+                        
+                      </div>
+              
+                      <br>
+                      <br>
+                      <p class="h4">
+                          Desenvolvimento de planos de ação
+                      </p>
+                      <br>
+                      <br>
+                      <div class="row d-flex margem">
+                        <br>
+                        <p class="fs-6">
+                          <strong>Ações táticas</strong>: As etapas específicas que a empresa executará para implementar suas estratégias.
+                        </p> 
+                        <p class="fs-6">
+                          <strong>Responsabilidade</strong>: Atribua responsabilidades específicas aos membros da equipe, garantindo que todos saibam o que fazer. 
+                          
+                        </p>
+                        <p class="fs-6">
+                          <strong>Cronograma</strong>: Cronograma para implementar as ações e atingir os objetivos.
+                        </p>
+                      </div>
+                      <br>
+                      <br>
+                      <p class="h4">
+                        Monitoramento e avaliação
+                      </p>
+                      <br>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="fs-6">
+                          <strong>KPIs (indicadores-chave de desempenho)</strong>: defina métricas para medir o progresso em direção às metas.
+                        </p> 
+                        
+                        <p class="fs-6">
+                          <strong>Revisões regulares</strong>: Avaliações periódicas de desempenho para ajustar estratégias e ações conforme necessário.
+                        </p> 
+                        
+                        <p class="fs-6">
+                          <strong>Feedback e melhoria contínua</strong>: Reúna feedback de clientes e funcionários para identificar áreas de melhoria e ajustar planos de ação.
+                        </p>
+                      </div>
+                      <br>
+                      <br>
+                      <p class="h4">
+                        Análise de mercado e concorrência
+                      </p>
+                      <br>
+                      <br>
+                      <div class="row d-flex margem">
+                        <p class="fs-6">
+                          <strong>Pesquisa de mercado</strong>: Pesquisa sobre o público-alvo, suas necessidades e seu comportamento de compra.
+                        </p> 
+                        <p class="fs-6">
+                          <strong>Análise da concorrência</strong>: Monitore os concorrentes, suas estratégias, pontos fortes e fracos, para identificar oportunidades de diferenciação.
+                        </p> 
+                      </div>
+                      <br>
+                      <br>
+                      <p class="h4">
+                        Plano de marketing
+                      </p>
+                      <br>
+                      <br>
+                      <div class="row d-flex margem">
+                          <p class="fs-6">
+                            <strong>Segmentação de mercado</strong>: Identifique os segmentos de clientes mais rentáveis ​​e defina estratégias específicas para cada um.
+                          </p>
+                          <p class="fs-6">
+                            <strong>Posicionamento</strong>: Defina como a empresa se posicionará no mercado para se diferenciar da concorrência.
+                          </p>
+                          <p class="fs-6">
+                            <strong>Mix de Marketing</strong>: Desenvolver estratégias para os 4 P's (Produto, Preço, Praça e Promoção).
+                          </p> 
+                      </div>
+                          <br>
+                          <br>
+                          <p class="h4">
+                            Plano de contingência
+                          </p>
+                          <br>
+                          <br>
+                      <div class="row d-flex margem">
+                        
+                          <p class="fs-6">
+                            <strong>Riscos potenciais</strong>: Identifique os principais riscos que podem afetar o negócio, como crises económicas, alterações regulamentares ou desastres naturais.
+                          </p>
+                          <p class="fs-6">
+                            <strong>Planos de resposta</strong>: Desenvolver planos para mitigar os riscos identificados, garantindo que o negócio continue a operar mesmo em situações adversas.
+                          </p>
+                          <p class="fs-6">
+                            O planejamento estratégico ajuda a empresa a definir um caminho claro e focado, garantindo que todos os esforços estejam alinhados com os objetivos gerais do negócio. É um processo contínuo que requer monitoramento e ajustes regulares para responder às mudanças no mercado e nas circunstâncias internas.
+                          </p>
+                      </div>
+                    </div>
+                   
+                      <br>
+            
+                </div>    
+                
+            
+                  <a href="/dolar/formas-de-ganhar-em-dolar" class="btn">proximo</a>
+                
+              </div>
+
+             <div class="d-flex flex-column gap-3 PrimeLinks">
+                <div class="shadow rounded bg-white d-flex justify-content-center links">
+                  <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                    <p class="text-start par">Recentes Posts</p>
+                    <a href="/Renda-Variavel/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                    <a href="/Renda-Fixa/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                    <a href="/Renda-Fixa/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                    <a href="/Renda-Fixa/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                    <a href="/Renda-Variavel/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+                  </div>
+              </div> 
+              <div class="shadow rounded bg-white d-flex justify-content-center links">
+                <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                  <p class="text-start par">Categorias</p>
+                  <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                  <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                  <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                  <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                  <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+                </div>
+            </div>
+            </div>
+
+              
+        </section>
+        <section class="conta bg-white d-flex justify-content-center p-4">
+          <label>© 2024 por mondongo.com</label>
+        </section>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          let ccon = document.querySelector(".ccon")
+          
+          var socket = io();
+            socket.emit("data", {"IsLogged": true, "id": 8})
+            
+            socket.on("cont", (msg)=>{
+
+              console.log(msg)
+              ccon.innerText = msg
+              
+
+            })
+            socket.on("url", (url)=>{
+
+              ccon.href = url
+
+            })
+
+          
+        </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
