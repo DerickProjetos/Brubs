@@ -185,5 +185,15 @@ app.get("/dolar/aprenda-ingles-online", (req, res)=>{
     res.sendFile(__dirname + "/posts/pages/categories/dolar/pages/2aprendaingles.html")
 
 })
+app.get("robots.txt", (req, res)=>{
+
+    res.sendFile(__dirname + "robots.txt")
+
+})
+app.get("sitemap", (req, res)=>{
+
+    res.sendFile(__dirname + "sitemap.xml")
+
+})
 
 server.listen(8080)
