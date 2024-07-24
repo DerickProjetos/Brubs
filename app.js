@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 
-let NextUrls = ["/Renda-Fixa/O-que-e-cdb", "/Renda-Fixa/Tesouro-Direto", "/Renda-Fixa/Entendo-As-Debentures", "/Renda-Variavel/Fundos-Imobiliarios", "/Renda-Fixa/Poupanca", "/Renda-Fixa/guia-completo-para-lc", "/Renda-Variavel/Investir-em-Dolar", "/comercio/Estrategias-para-Comercio", "/dolar/formas-de-ganhar-em-dolar", "/renda-passiva/entendendo-o-conceito", "/dolar/dicas-de-ecommerce", "/renda-passiva/produtos-digitais", "/comercio/Analise-Swot", "/dolar/aprenda-ingles-online", "/renda-passiva/aluguel-de-imoveis"]
+let NextUrls = ["/Renda-Fixa/O-que-e-cdb", "/Renda-Fixa/Tesouro-Direto", "/Renda-Fixa/Entendo-As-Debentures", "/Renda-Variavel/Fundos-Imobiliarios", "/Renda-Fixa/Poupanca", "/Renda-Fixa/guia-completo-para-lc", "/Renda-Variavel/Investir-em-Dolar", "/comercio/Estrategias-para-Comercio", "/dolar/formas-de-ganhar-em-dolar", "/renda-passiva/entendendo-o-conceito", "/dolar/dicas-de-ecommerce", "/renda-passiva/produtos-digitais", "/comercio/Analise-Swot", "/dolar/aprenda-ingles-online", "/renda-passiva/aluguel-de-imoveis", "/comercio/Plano-de-Marketing"]
 let Users = []
 
 app.use(express.static(__dirname + "/posts"))
@@ -157,6 +157,11 @@ app.get("/comercio/Analise-Swot", (req, res)=>{
     res.sendFile(__dirname + "/posts/pages/categories/comerciolocal/pages/1analiseswot.html")
 
 })
+app.get("/comercio/Plano-de-Marketing", (req, res)=>{
+
+    res.sendFile(__dirname + "/posts/pages/categories/comerciolocal/pages/2PlanodeMarketing.html")
+
+})
 
 
 
@@ -185,6 +190,7 @@ app.get("/dolar/aprenda-ingles-online", (req, res)=>{
     res.sendFile(__dirname + "/posts/pages/categories/dolar/pages/2aprendaingles.html")
 
 })
+
 
 app.get("/robots.txt", (req, res)=>{
 
