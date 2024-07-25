@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/posts.css">
+    <link rel="stylesheet" href="/style/link.css">
+    <title>Mondongo</title>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-light bg">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand" > 
+        <img class="font" src="/images/logoformondongo.png">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-light">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                </li>
+            
+            </ul>  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+
+              <div class="shadow rounded content container bg-white d-flex flex-column align-items-center gap-2">
+                <br>
+                <h3 class="title">Investir em Royalties e Licenças</h3>
+                <br>
+                <img class="ImgTitle card-img-top"  src="data:image/jpeg;base64,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">
+                <br>
+                <div class="container">
+
+                  <p>
+                      Investir em royalties e licenças é uma estratégia eficaz para gerar renda passiva, que oferece muitos benefícios para quem busca uma fonte de renda constante sem a necessidade de uma gestão intensiva. Aqui estão os aspectos mais importantes desta forma de investimento.
+                  </p>
+                  <br>
+                  <h5>O Que São Royalties e Licenças?</h5>
+                  <br>
+                  <div class="d-flex flex-column gap-2 margem">
+                    <h6>Royalties</h6>
+                    <p>
+                        Royalties são pagamentos contínuos feitos pelo uso de propriedade intelectual ou recursos naturais de outra pessoa ou empresa. Esses pagamentos geralmente são baseados em um percentual da receita gerada pelo uso do imóvel. Exemplos comuns incluem royalties de música, livros, patentes e recursos naturais como petróleo e minerais.
+                    </p>
+                  </div>
+                  <br>
+                  <div class="d-flex flex-column gap-2">
+                      <h6>Licenças</h6>
+                      <p>
+                        Licenças são permissões concedidas pelo proprietário da propriedade intelectual a terceiros, permitindo o uso dessa propriedade em troca de uma taxa. Isso pode incluir software, marcas registradas, patentes e direitos autorais. As licenças podem ser exclusivas ou não exclusivas, dependendo do acordo entre as partes.
+                      </p>
+                  </div>
+                  <br>
+
+              
+                  <h5>Benefícios de Investir em Royalties e Licenças</h5>
+                  <br>
+                  <div class="d-flex flex-column gap-2">
+                    <h6>Renda Passiva</h6>
+                    <p>
+                        Um dos maiores benefícios de investir em royalties e licenças é a geração de renda passiva. Quando o acordo está em vigor, os pagamentos contínuos são efetuados sem a necessidade da participação ativa do proprietário, garantindo um fluxo de caixa estável.
+                    </p>
+                
+                    <h6>Diversificação</h6>
+                    <p>
+                        Investir em diferentes tipos de royalties e licenças pode ajudar a diversificar sua carteira de investimentos. Isto pode incluir a diversificação em diferentes setores, como música, tecnologia, literatura e recursos naturais. A diversificação pode reduzir o risco global da carteira para proteger o investidor das flutuações em um setor específico.
+                    </p>
+                
+                    <h6>Avaliação de Ativos</h6>
+                    <p>
+                        Uma propriedade intelectual pode aumentar de valor com o tempo. Por exemplo, uma patente de tecnologia inovadora ou uma música que se torne um clássico pode gerar royalties significativos durante muitos anos. Isto pode levar a um aumento significativo na renda passiva e no valor do ativo subjacente.
+                    </p>
+                
+                    <h6>Benefícios Fiscais</h6>
+                    <p>
+                        Em alguns casos, a receita de royalties pode ser tratada favoravelmente para fins fiscais, dependendo da jurisdição. Isto pode incluir deduções de depreciação de propriedade intelectual ou tratamentos fiscais especiais para certos tipos de receitas de royalties.
+                    </p>
+
+                  </div>
+                  <br>
+                  <h5>Desafios e Considerações</h5>
+                  <br>
+                  <div class="d-flex flex-column gap-2">
+                    <h6>Avaliação de Ativos</h6>
+                    <p>
+                        Estimar o valor potencial de um ativo de propriedade intelectual pode ser difícil. A receita futura de royalties pode ser incerta e depende de vários fatores, incluindo popularidade do produto, mudanças tecnológicas e tendências de mercado.
+                    </p>
+                
+                    <h6>Gestão de Propriedade Intelectual</h6>
+                    <p>
+                        Embora a gestão direta não seja necessária, a proteção e preservação dos direitos de propriedade intelectual são essenciais. Isto pode incluir a renovação de patentes, proteção contra falsificação e negociação de novos acordos de licença.
+                    </p>
+                
+                    <h6>Riscos de Mercado</h6>
+                    <p>
+                        A receita de royalties pode ser afetada por mudanças no mercado e na demanda. Por exemplo, uma inovação tecnológica que torne uma patente obsoleta ou uma mudança nas preferências do consumidor que afete a popularidade de uma música ou livro pode afetar negativamente as receitas.
+                    </p>
+                  </div>
+                  <br>
+                  <h5>Estratégias para Maximizar os Retornos de Royalties e Licenciamento</h5>
+                  <br>
+                  <div class="d-flex flex-column gap-2">
+                    <h6>Pesquisa e Diligência</h6>
+                    <p>
+                        É essencial fazer pesquisas detalhadas antes de investir em qualquer propriedade protegida por direitos autorais ou licenciada. Isto inclui compreender o mercado, as tendências futuras e o potencial de geração de rendimento do ativo.
+                    </p>
+                
+                    <h6>Diversificação</h6>
+                    <p>
+                        Diversificar os investimentos em diferentes tipos e setores de propriedade intelectual pode ajudar a mitigar os riscos. Isto pode incluir o investimento numa combinação de patentes, direitos de autor, marcas registadas e licenças de software.
+                    </p>
+                
+                    <h6>Aconselhamento Profissional</h6>
+                    <p>
+                        Trabalhar com consultores e advogados de propriedade intelectual pode ajudar a garantir que os investimentos sejam bem administrados e protegidos. Eles podem aconselhar sobre avaliação, negociação de acordos e proteção de direitos.
+                    </p>
+                  </div>
+                  <br>
+                  <h3>Considerações Finais</h3>
+                  <br>
+                  <p>
+                      Investir em royalties e licenças pode ser uma estratégia eficaz para gerar rendimento passivo, proporcionando uma combinação de fluxo de caixa contínuo e potencial de valorização de ativos. No entanto, é essencial abordar estes investimentos com uma compreensão clara dos riscos e desafios envolvidos. Com investigação adequada, diversificação e gestão profissional, os royalties e as licenças podem ser uma adição valiosa a uma carteira de investimentos diversificada, proporcionando uma fonte estável e potencialmente lucrativa de rendimento passivo.
+                  </p>
+                  <br>
+                </div>
+                  
+          
+                
+
+              
+
+
+                <a href="/" class="btn">proximo</a>
+
+              </div>
+
+             <div class="d-flex flex-column gap-3 PrimeLinks">
+                <div class="shadow rounded bg-white d-flex justify-content-center links">
+                  <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                    <p class="text-start par">Recentes Posts</p>
+                    <a href="/Renda-Variavel/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                    <a href="/Renda-Fixa/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                    <a href="/Renda-Fixa/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                    <a href="/Renda-Fixa/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                    <a href="/Renda-Variavel/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+                  </div>
+              </div> 
+              <div class="shadow rounded bg-white d-flex justify-content-center links">
+                <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                  <p class="text-start par">Categorias</p>
+                  <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                  <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                  <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                  <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                  <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+                </div>
+            </div>
+            </div>
+
+              
+        </section>
+        <section class="conta bg-white d-flex justify-content-center p-4">
+          <label>© 2024 por mondongo.com</label>
+        </section>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          let ccon = document.querySelector(".ccon")
+          
+          var socket = io();
+            socket.emit("data", {"IsLogged": true, "id": 15})
+            
+            socket.on("cont", (msg)=>{
+
+              console.log(msg)
+              ccon.innerText = msg
+              
+
+            })
+            socket.on("url", (url)=>{
+
+              ccon.href = url
+
+            })
+
+          
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
