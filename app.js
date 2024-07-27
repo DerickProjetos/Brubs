@@ -195,6 +195,11 @@ app.get("/dolar/aprenda-ingles-online", (req, res)=>{
     res.sendFile(__dirname + "/posts/pages/categories/dolar/pages/2aprendaingles.html")
 
 })
+app.get("/dolar/criar-conteudo", (req, res)=>{
+
+    res.sendFile(__dirname + "/posts/pages/categories/dolar/pages/3criar-conteudo.html")
+
+})
 
 
 app.get("/robots.txt", (req, res)=>{
