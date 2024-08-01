@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 
-let NextUrls = ["/Renda-Fixa/O-que-e-cdb", "/Renda-Fixa/Tesouro-Direto", "/Renda-Fixa/Entendo-As-Debentures", "/Renda-Variavel/Fundos-Imobiliarios", "/Renda-Fixa/Poupanca", "/Renda-Fixa/guia-completo-para-lc", "/Renda-Variavel/Investir-em-Dolar", "/comercio/Estrategias-para-Comercio", "/dolar/formas-de-ganhar-em-dolar", "/renda-passiva/entendendo-o-conceito", "/dolar/dicas-de-ecommerce", "/renda-passiva/produtos-digitais", "/comercio/Analise-Swot", "/dolar/aprenda-ingles-online", "/renda-passiva/aluguel-de-imoveis", "/comercio/Plano-de-Marketing", "/renda-passiva/investir-em-royalties-e-licencas", "/dolar/criar-conteudo", "/comercio/Plano-de-Emergencia", "/dolar/trabalhar-remotamente"]
+let NextUrls = ["/Renda-Fixa/O-que-e-cdb", "/Renda-Fixa/Tesouro-Direto", "/Renda-Fixa/Entendo-As-Debentures", "/Renda-Variavel/Fundos-Imobiliarios", "/Renda-Fixa/Poupanca", "/Renda-Fixa/guia-completo-para-lc", "/Renda-Variavel/Investir-em-Dolar", "/comercio/Estrategias-para-Comercio", "/dolar/formas-de-ganhar-em-dolar", "/renda-passiva/entendendo-o-conceito", "/dolar/dicas-de-ecommerce", "/renda-passiva/produtos-digitais", "/comercio/Analise-Swot", "/dolar/aprenda-ingles-online", "/renda-passiva/aluguel-de-imoveis", "/comercio/Plano-de-Marketing", "/renda-passiva/investir-em-royalties-e-licencas", "/dolar/criar-conteudo", "/comercio/Plano-de-Emergencia", "/dolar/trabalhar-remotamente", "/renda-passiva/marketing-de-afiliado"]
 let Users = []
 
 app.use(express.static(__dirname + "/posts"))
@@ -139,6 +139,11 @@ app.get("/renda-passiva/aluguel-de-imoveis", (req, res)=>{
 app.get("/renda-passiva/investir-em-royalties-e-licencas", (req, res)=>{
 
     res.sendFile(__dirname + "/posts/pages/categories/RendaPassiva/pages/3InvestirRoyaltieseLicencas.html")
+
+})
+app.get("/renda-passiva/marketing-de-afiliado", (req, res)=>{
+
+    res.sendFile(__dirname + "/posts/pages/categories/RendaPassiva/pages/4marketingdeafiliados.html")
 
 })
 
