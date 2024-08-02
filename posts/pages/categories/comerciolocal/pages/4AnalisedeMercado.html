@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/posts.css">
+    <link rel="stylesheet" href="/style/link.css">
+    <title>Mondongo</title>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-light bg">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand" > 
+        <img class="font" src="/images/logoformondongo.png">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-light">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                </li>
+            
+            </ul>  
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+
+              <div class="shadow rounded content container bg-white d-flex flex-column align-items-center gap-2">
+                <br>
+                <h3 class="title">Análise de Mercado e Concorrência</h3>
+                <br>
+                <img class="card-img-top" src="data:image/jpeg;base64,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">
+             
+                <div class="container mt-5">
+                  
+                         
+                    <p>A análise de mercado e concorrência é essencial para qualquer negócio, principalmente no comércio local. Compreender o ambiente em que o negócio opera e identificar os concorrentes é essencial para desenvolver estratégias eficazes que garantam a sobrevivência e o crescimento do negócio.</p>
+                     
+                 
+          
+                  <div class="row mt-4">
+                      <div class="col-12">
+                          <h3>Análise de Mercado</h3>
+                          <p>A análise de mercado envolve a coleta e interpretação de informações sobre a indústria, os consumidores e as tendências do mercado. No comércio local, isso inclui:</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Identificação do Público-Alvo</h5>
+                          <p>Entenda quem são seus potenciais clientes, suas necessidades, preferências e comportamentos de compra. Isto pode ser feito através de entrevistas, grupos focais, questionários e análise de dados demográficos.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Tendências de Mercado</h5>
+                          <p>Identifique as tendências atuais que podem afetar o negócio, como mudanças nos hábitos de consumo, avanços tecnológicos e fatores econômicos locais.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>A Demanda por Produtos ou Serviços</h5>
+                          <p>Avalie a demanda pelos produtos ou serviços oferecidos. Isso pode incluir a análise de dados históricos de vendas, feedback de clientes e pesquisas de mercado.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Preço e Valor Percebido</h5>
+                          <p>Analise como os consumidores percebem o valor do produto ou serviço em relação ao preço. Isso permite que você determine uma estratégia de preços competitiva.</p>
+                      </div>
+                  </div>
+          
+                  <div class="row mt-4">
+                      <div class="col-12">
+                          <h3>Análise da Concorrência</h3>
+                          <p>A análise competitiva consiste em identificar e estudar concorrentes diretos e indiretos no mercado local. Isso significa:</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Identificação de Concorrentes</h5>
+                          <p>Liste todos os concorrentes que operam na mesma área geográfica e oferecem produtos ou serviços semelhantes, incluindo lojas físicas e negócios online.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Pontos Fortes e Fracos dos Concorrentes</h5>
+                          <p>Avalie os pontos fortes e fracos de cada concorrente, como qualidade do produto, atendimento ao cliente, estratégias de marketing e preços.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Estratégias dos Concorrentes</h5>
+                          <p>Observe as estratégias de marketing e vendas utilizadas pelos concorrentes, como promoções, programas de fidelidade e campanhas publicitárias.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Análise SWOT</h5>
+                          <p>Faça uma análise SWOT (Forças, Fraquezas, Oportunidades e Ameaças) do seu negócio em comparação com seus concorrentes. Isso ajuda a identificar áreas em que a empresa pode se destacar e oportunidades para superar a concorrência.</p>
+                      </div>
+                  </div>
+          
+                  <div class="row mt-4">
+                      <div class="col-12">
+                          <h3>Implementação da Análise</h3>
+                          <p>Com o conhecimento adquirido a partir da análise do mercado e da concorrência, as empresas locais podem desenvolver estratégias mais eficazes, tais como:</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Diferenciação</h5>
+                          <p>Destacar-se da concorrência oferecendo algo único, seja na qualidade do produto, no atendimento ou na experiência de compra.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Ajuste de Preços</h5>
+                          <p>Determine uma estratégia de preços competitiva, levando em consideração o valor percebido do cliente e os preços dos concorrentes.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Marketing Direcionado</h5>
+                          <p>Desenvolver campanhas de marketing que atinjam diretamente o público-alvo, utilizando canais de comunicação adequados e mensagens que correspondam às necessidades e desejos dos consumidores.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Melhoria Contínua</h5>
+                          <p>Utilizar o feedback dos clientes e insights competitivos para melhorar continuamente produtos, serviços e processos internos.</p>
+                      </div>
+                  </div>
+          
+                  <div class="row mt-4">
+                      <div class="col-12">
+                          <h3>Ferramentas e Técnicas</h3>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Pesquisa de Mercado</h5>
+                          <p>Entrevistas e grupos focais: Conversas diretas com consumidores podem fornecer insights profundos.</p>
+                          <p>Pesquisas e Questionários: Distribuídos online ou fisicamente, permitem coletar dados quantitativos de um grande número de pessoas.</p>
+                          <p>Observação: Observar o comportamento do consumidor nos pontos de venda pode revelar hábitos e preferências de compra.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Análise de Dados</h5>
+                          <p>As ferramentas de CRM e a análise estatística ajudam a identificar tendências e padrões no comportamento do cliente.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Análise Comparativa</h5>
+                          <p>Compare suas práticas e resultados de negócios com os de seus concorrentes para identificar áreas de melhoria e oportunidades de inovação.</p>
+                      </div>
+                  </div>
+          
+                  <div class="row mt-4 d-flex flex-column">
+                      <div class="col-12">
+                          <h3>Considerações Locais</h3>
+                      </div>
+                        <br>
+                      <div class="col-12">
+                          <h5>Cultura Local</h5>
+                          <p>Compreender a cultura e os valores da comunidade local pode ajudá-lo a adaptar produtos e estratégias de marketing para melhor atender às expectativas dos consumidores.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Economia Local</h5>
+                          <p>Fatores econômicos locais, como taxas de emprego, rendimento médio e desenvolvimento de infraestruturas, podem influenciar o comportamento de compra dos consumidores.</p>
+                      </div>
+          
+                      <div class="col-12">
+                          <h5>Parcerias Locais</h5>
+                          <p>A formação de parcerias com outras empresas locais pode criar sinergias benéficas, tais como colaborações em eventos e promoções conjuntas.</p>
+                      </div>
+                  </div>
+          
+                  <div class="row mt-4">
+                      <div class="col-12">
+                          <h3>Monitoramento Contínuo</h3>
+                          <p>A análise do mercado e da concorrência deve ser um processo contínuo. Ferramentas de monitoramento como Alertas do Google e plataformas de análise de mídia social podem fornecer insights em tempo real. O feedback dos clientes também é essencial para revelar áreas de melhoria e novas oportunidades de negócio.</p>
+                          <p>Em suma, uma análise de mercado e concorrência bem feita fornece uma base sólida para a tomada de decisões estratégicas. Ela permite ao comércio local não apenas sobreviver, mas prosperar em um ambiente competitivo, adaptando-se às mudanças e atendendo de forma eficaz às necessidades dos consumidores.</p>
+                      </div>
+                  </div>
+              </div>
+                  
+             
+          
+                  
+          
+                
+
+              
+
+
+                <a href="/dolar/trabalhar-remotamente" class="btn">proximo</a>
+
+              </div>
+
+             <div class="d-flex flex-column gap-3 PrimeLinks">
+                <div class="shadow rounded bg-white d-flex justify-content-center links">
+                  <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                    <p class="text-start par">Recentes Posts</p>
+                    <a href="/Renda-Variavel/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                    <a href="/Renda-Fixa/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                    <a href="/Renda-Fixa/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                    <a href="/Renda-Fixa/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                    <a href="/Renda-Variavel/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+                  </div>
+              </div> 
+              <div class="shadow rounded bg-white d-flex justify-content-center links">
+                <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                  <p class="text-start par">Categorias</p>
+                  <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                  <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                  <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                  <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                  <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+                </div>
+            </div>
+            </div>
+
+              
+        </section>
+        <section class="conta bg-white d-flex justify-content-center p-4">
+          <label>© 2024 por mondongo.com</label>
+        </section>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          let ccon = document.querySelector(".ccon")
+          
+          var socket = io();
+            socket.emit("data", {"IsLogged": true, "id": 18})
+            
+            socket.on("cont", (msg)=>{
+
+              console.log(msg)
+              ccon.innerText = msg
+              
+
+            })
+            socket.on("url", (url)=>{
+
+              ccon.href = url
+
+            })
+
+          
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
