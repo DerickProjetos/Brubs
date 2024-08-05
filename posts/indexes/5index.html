@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/link.css">
+    
+    <title>Mondongo</title>
+    <style>
+        body{
+            background: whitesmoke;
+        }
+        .posts{
+
+            margin-top: 2%;
+
+        }
+        .con{
+
+            margin-top: 3%;
+
+        }
+        .cont *{
+
+            margin: 5% 0%;
+
+        }
+        .btn{
+
+            width: 50%;
+            
+        }
+        .font{
+
+margin-left: 15%;
+height: 45px;
+width: 50px;
+
+}
+        .bg{
+            background: #7952b3;
+            color: white;
+        }
+        .content{
+          width: 90%;
+        }
+        .img{
+            width: 40px;
+            height: 40px;
+
+        }
+        .square{
+
+            width: 50%;
+            
+        }
+    </style>
+</head>
+<body class="d-flex flex-column">
+    <nav class="navbar navbar-light bg">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand" > 
+                <img class="font" src="/images/logoformondongo.png">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">About-Us</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-light">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre-Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/politica-de-privacidade">Politica de Privacidade</a>
+                    </li>
+                
+                </ul>  
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+        <section class="posts d-flex justify-content-center gap-2">
+            <div class="shadow rounded bg-white container d-flex gap-3 flex-column">
+                <br>
+                <div class="row d-flex gap-3">
+                    <div class="col-md-12">
+                        <div class="card">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">               
+                            <div class="card-body d-flex flex-column align-items-center gap-4">
+                                <h5 class="card-title">Planejamento Financeiro para Sair do País</h5>
+                                <p class="card-text">Sair do país em busca de novas oportunidades é um sonho compartilhado por muitas pessoas ao redor do mundo. Seja para estudar, trabalhar ou simplesmente desfrutar de uma nova experiência, a decisão de emigrar envolve um cuidadoso planejamento financeiro e uma série de preparativos...</p>
+                                <a href="/sair-do-pais" class="btn btn-light bg">Ler</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+              
+                <br>
+               
+                  <nav aria-label="">
+                    <ul class="pagination">
+                    
+                        <a class="page-link" href="/3" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        <li class="page-item">
+                            <a class="page-link" href="/3" tabindex="-1">3</a>
+                          </li>
+                          <li class="page-item "><a class="page-link" href="/4">4</a></li>
+                          <li class="page-item disabled"><a class="page-link" href="/5">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+          
+
+
+        <div class="d-flex flex-column gap-3 PrimeLinks">
+            <div class="shadow rounded bg-white d-flex justify-content-center links">
+                <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                  <p class="text-start par">Recentes Posts</p>
+                  <a href="/Renda-Variavel/O-que-sao-acoes" class="text-start">O Que São Ações?</a>
+                  <a href="/Renda-Fixa/O-que-e-cdb" class="text-start">Introdução Ao Cdb?</a>
+                  <a href="/Renda-Fixa/Tesouro-Direto" class="text-start">Tesouro Direto: Guia Completo para Investidores</a>
+                  <a href="/Renda-Fixa/Entendo-As-Debentures" class="text-start">Entendendo as Debêntures: Uma Alternativa de Investimento e Financiamento</a>
+                  <a href="/Renda-Variavel/Fundos-Imobiliarios" class="text-start">Fundos Imobiliários: O Guia Completo para Investir</a>
+                </div>
+            </div> 
+          <div class="shadow rounded bg-white d-flex justify-content-center links">
+            <div class="d-flex gap-2 flex-column justify-content-center  sublinks">
+                <p class="text-start par">Categorias</p>
+                <a href="/Renda-Fixa" class="text-start">Renda Fixa</a>
+                <a href="/Renda-Variavel" class="text-start">Renda Váriavel</a>
+                <a href="/renda-passiva" class="text-start">Renda Passiva</a>
+                <a href="/comercio" class="text-start">Fazer Um Comércio Local</a>
+                <a href="/dolar" class="text-start">Ganhar Em Dólar</a>
+              </div>
+        </div>
+        </div>
+        </section>
+        <section class="bg-white d-flex flex-column con justify-content-center">
+            <label class="p-3 text-center">© 2024 por mondongo.com</label>
+      
+           
+            
+        </section>
+
+       
+        
+      
+
+      
+
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
