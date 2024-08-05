@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 
-let NextUrls = ["/Renda-Fixa/O-que-e-cdb", "/Renda-Fixa/Tesouro-Direto", "/Renda-Fixa/Entendo-As-Debentures", "/Renda-Variavel/Fundos-Imobiliarios", "/Renda-Fixa/Poupanca", "/Renda-Fixa/guia-completo-para-lc", "/Renda-Variavel/Investir-em-Dolar", "/comercio/Estrategias-para-Comercio", "/dolar/formas-de-ganhar-em-dolar", "/renda-passiva/entendendo-o-conceito", "/dolar/dicas-de-ecommerce", "/renda-passiva/produtos-digitais", "/comercio/Analise-Swot", "/dolar/aprenda-ingles-online", "/renda-passiva/aluguel-de-imoveis", "/comercio/Plano-de-Marketing", "/renda-passiva/investir-em-royalties-e-licencas", "/dolar/criar-conteudo", "/comercio/Plano-de-Emergencia", "/dolar/trabalhar-remotamente", "/renda-passiva/marketing-de-afiliado", "/comercio/Analise-de-Mercado"]
+let NextUrls = ["/Renda-Fixa/O-que-e-cdb", "/Renda-Fixa/Tesouro-Direto", "/Renda-Fixa/Entendo-As-Debentures", "/Renda-Variavel/Fundos-Imobiliarios", "/Renda-Fixa/Poupanca", "/Renda-Fixa/guia-completo-para-lc", "/Renda-Variavel/Investir-em-Dolar", "/comercio/Estrategias-para-Comercio", "/dolar/formas-de-ganhar-em-dolar", "/renda-passiva/entendendo-o-conceito", "/dolar/dicas-de-ecommerce", "/renda-passiva/produtos-digitais", "/comercio/Analise-Swot", "/dolar/aprenda-ingles-online", "/renda-passiva/aluguel-de-imoveis", "/comercio/Plano-de-Marketing", "/renda-passiva/investir-em-royalties-e-licencas", "/dolar/criar-conteudo", "/comercio/Plano-de-Emergencia", "/dolar/trabalhar-remotamente", "/renda-passiva/marketing-de-afiliado", "/comercio/Analise-de-Mercado", "/sair-do-pais"]
 let Users = []
 
 app.use(express.static(__dirname + "/posts"))
@@ -24,6 +24,9 @@ app.get("/3", (req, res)=>{
 })
 app.get("/4", (req, res)=>{
     res.sendFile(__dirname +"/posts/indexes/4index.html")
+})
+app.get("/5", (req, res)=>{
+    res.sendFile(__dirname +"/posts/indexes/5index.html")
 })
 
 
@@ -219,6 +222,13 @@ app.get("/dolar/criar-conteudo", (req, res)=>{
 app.get("/dolar/trabalhar-remotamente", (req, res)=>{
 
     res.sendFile(__dirname + "/posts/pages/categories/dolar/pages/4TrabalharRemotamente.html")
+
+})
+
+
+app.get("/sair-do-pais", (req, res)=>{
+
+    res.sendFile(__dirname + "/posts/pages/categories/allpages/8SairdoPais.html")
 
 })
 
